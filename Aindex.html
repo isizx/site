@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='Astyle.css'>
+    <link rel="icon" href="favicon/mapaRosa-removebg-preview.png" type="image/png">
+    <title>EpicAventura</title>
+    <meta name="descripition" content="Explore o mundo!">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1><a class ="logo" href="Aindex.html">EpicAventura</a></h1>
+            <a class="login" href="loginpage.html"><img class="logo" src="perfis/login.ico"></a>
+        </div>
+    
+        <nav>
+            
+            <div class="navegar">
+                <a href="Aindex.html" id="navegacao">Inicio</a>
+                <a href='sobre.html' id="navegacao">Sobre<a>
+                <a href='desafio.html' id="navegacao">Desafio</a>
+            </div>
+        </nav>
+    </div>
+    
+        <div class="bv">  
+            <h2 class="tt">Boas-vindas!</h2>
+            <p class="corpobv"> Estamos empolgados por ter você aqui e convidamos você a explorar cada cantinho. 
+            Mergulhe em uma jornada cheia de descobertas, conteúdos interessantes e experiências
+             feitas para encantar e inspirar. Sinta-se à vontade para navegar, 
+             se aventurar e aproveitar tudo o que preparamos especialmente para você. 
+            Seja bem-vindo e divirta-se!</p>
+        </div>
+
+        <div class="mapa">
+            <h3 class="tt">Saiba os locais próximo de você</h3>
+            <select id="placeType" onchange="showMap()">
+                <option value="">Selecione...</option>
+                <option value="restaurant">Restaurante</option>
+                <option value="movie_theater">Cinema</option>
+                <option value="shopping_mall">Shopping</option>
+            </select>
+        </div>
+
+
+        <div class="container2">
+            
+            <div class="feedb" id="iten">
+
+                    <h4 class="feedback">Feedback</h4>
+
+                    <div id="perfil">
+                        
+                        <img src="perfis/feiticeiraRatOz.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                        <p  id="nomeUsuario" class="item">Isis</p>
+                        <p id="coment" class="item">Muito bom, passa uma vibe muito boa!! AMEIII </p>
+                    </div>
+
+                    <div id="perfil">
+                        <img src="perfis/porgueiroindia.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                        <p id="nomeUsuario" class="item">Ashley</p>
+                        <p id="coment" class="item">Recomendo ir ler um livro na praia quando estiver nublado.</p>
+                    </div>
+
+                    <div id="perfil">
+                        <img src="perfis/tutuguim.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                        <p id="nomeUsuario" class="item">Ysis</p>
+                        <p id="coment" class="item">Pizzaria maravilhosa, tem um sabor incrível!!!</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="Ascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUqR_dWMxF7ZKI9NIOChEEadsZ7ys0MKg&libraries=places"></script>
+</body>
+</html>

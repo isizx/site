@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+  
+  }
+  
+  body{
+    margin-top: 2.5%;
+    background-color: #494848;
+    /*background-image: url(./fundo/DesafioIn.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+   }
+.container{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+/*----------------------------------*/
+.login{
+    display: flex;
+    justify-content: space-between;
+  }
+  .login img{
+    width: 60px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border: solid 2px #df3f64;
+    box-shadow: 
+      0 0 5px #df3f64,
+      0 0 10px #df3f64,
+      0 0 20px #df3f64,
+      0 0 40px #df3f64;
+  }
+.logo{
+    font-size: 37px;
+    font-family: "magic retro";      
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 
+    0 0 10px #df3f64,
+    0 0 20px #df3f64,
+    0 0 40px #df3f64,
+    0 0 80px #df3f64;
+    margin-left: 3.5%;
+      
+}
+  
+/*-----------------------------------------------*/ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#navegacao:hover {
+    color: #a64a60;
+}
+.navegar{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.448);
+    border-radius:20px ; 
+    width: 100vh;
+}
+#navegacao{
+    text-decoration: none;
+    color:#000000;
+    font-size: 25px;
+    font-weight: bold; 
+    padding: 5px 66px;
+}
+/*-----------------------------------------------------------*/
+
+.bv{
+    background-color: rgba(255, 255, 255, 0.448);
+    margin: 6% 6% 4% 6%;
+    border-radius: 20px;
+    padding: 5% 0% 7% 0% ;
+}
+
+.tt{
+    font-family: "magic retro";
+    text-align: center;
+    margin-bottom: 1.5%;
+    font-size: 37px;
+}
+.corpobv{
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin-left: 12%;
+}
+
+/*----------------------------------*/
+
+.mapa{
+    background-color: rgba(255, 255, 255, 0.448);
+    margin: 6% 0 0 15%;
+    border-radius: 20px;
+    padding: 3% 5% 4% 3%;
+    width: 19%;   
+}
+
+/*------------------------------------*/
+
+.container2{
+    display: flex;
+}
+.feedb{
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 20px;
+    margin: 5% 3% 3% 60%;
+    border-radius: 20px;
+    padding: 40px;
+    
+}
+.feedback{
+    font-family: "magic retro";
+    font-size: 33px;
+    line-height: 27.5px;
+    padding: 15px;
+}
+
+#perfil{
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ftperfil{
+    flex: 1;
+    max-width: 50px;
+    border-radius: 30px;
+}
+
+#nomeUsuario{
+    flex: 2;
+    cursor: pointer;  
+    text-align: left;
+}
+
+#coment{
+    flex: 3;
+    background-color: rgba(90, 89, 89, 0.589);
+    border-radius: 20px;
+    padding:10%;
+    margin: 10%;
+}
+
+
+
+#mapa {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='desafio.css'>
+    <link rel="icon" href="favicon/mapaRosa-removebg-preview.png" type="image/png">
+    <title>Desafios</title>
+</head>
+<body>
+
+    <div class="container"> 
+            <div class="login">
+                <h1><a class ="logo" href="index.html">EpicAventura</a></h1>
+                <a class="login" href="loginpage.html"><img class="logo" src="favicon/icologin.png"></a>
+            </div>
+        
+            <nav>
+                
+                <div class="navegar">
+                    <a href="index.html" id="navegacao">Inicio</a>
+                    <a href='sobre.html' id="navegacao">Sobre<a>
+                    <a href='#' id="navegacao">Desafio</a>
+                </div>
+            </nav>
+
+            <div class="d">  
+                <h2 class="titulod">Aqui sua jornada começa!</h2>
+                <p class="corpod"> Para se preparar para aventuras em parques, cafés e restaurantes:</p>
+                <ul>
+                    <li>Vista-se confortavelmente: Use roupas adequadas ao ambiente e sapatos confortáveis.</li>
+                    <li>Leve itens essenciais: Água, protetor solar, óculos de sol para parques, e carregador portátil ou um livro para cafés.</li>
+                    <li>Pesquise antes: Confira avaliações e cardápios para planejar melhor.</li>
+                    <li>Mente aberta: Esteja disposto a experimentar novas experiências e seja flexível.</li>
+                    <li>Documente, mas desconecte: Tire fotos, mas aproveite o momento.Segurança em primeiro lugar: Cuide dos seus pertences e esteja atento ao ambiente.</li>
+                    <li>Prepare-se para o clima: Leve uma capa de chuva ou um casaco, conforme necessário.</li>
+                </ul>
+            </div>
+        <!--_________________________________________________________________________________________________-->
+            <div class="desa">
+                <h3 class="titulod">Sorteie seu desafio</h3>
+                
+                <button class="botao" id="sorteioButton">
+                    <span class="botao-sombra"></span>
+                    <span class="botao-borda"></span>
+                    <span class="botao-texto text">
+                    Play
+                    </span>
+                </button>
+                <p id="frase"></p>
+            </div>
+
+        <!--_________________________________________________________________________________________________-->
+       
+            <div>
+                <h3 class="tt">Mais para escolher</h3>
+            <div>
+            <div class='cardd'>   
+                
+            <div class='card'  onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    
+                <div class="perfil">
+                    <img src="perfis/feiticeiraRatOz.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                    <p class="item">Ysis</p>
+                    </div>
+                    <div>
+                    <h2 class='ttl'>Loja de moda</h2>
+                    <p class='descricao'>Eu adoro dar um passeio no shopping e dessa vez foi extremamente satisfatório. A gerente  que me recebeu, era super simpática e estava super charmosa, o look dela estava divino! A qualidade das roupas é maravilhosa.</p>
+                    </div>
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.    5092619023903!2d-43.182181490134525!3d-22.894579779177207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5732a12a31%3A0x316901f971660ce1!2sMuseu%20do%20Amanh%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1730933851128!5m2!1spt-BR!2sbr" ></iframe>
+                </div>
+
+                <div class='card' onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <div class="perfil">
+                    <img src="perfis/tutuguim.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                    <p class="item">Telma</p>
+                    </div>
+                    <div>
+                    <h2 class='ttl'>Parque da Cidade</h2>
+                    <p class='descricao'>Foi minha primeira vez e foi simplismente inesquecível, a paisagem é linda e a natureza é bem vasta. Só recomendo o uso de repelentes rs.</p>
+                    </div>
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.    5092619023903!2d-43.182181490134525!3d-22.894579779177207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5732a12a31%3A0x316901f971660ce1!2sMuseu%20do%20Amanh%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1730933851128!5m2!1spt-BR!2sbr"></iframe>
+                </div>
+
+                <div class='card' onmouseover='expandCard(this)' onmouseout='shinkCard(this)'>
+                    <div class="perfil">
+                    <img src="perfis/porgueiroindia.jpeg" type="image/png" alt="perfil" id="ftperfil" class="item"/>
+                    <p class="item">Ashley</p>
+                    </div>
+                    <div>
+                    <h2 class='ttl'>Zoológico</h2>
+                    <p class='descricao'>É perfeito ir em um dia de sol junto com a família, leve água!</p>
+                    </div>
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.    5092619023903!2d-43.182181490134525!3d-22.894579779177207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5732a12a31%3A0x316901f971660ce1!2sMuseu%20do%20Amanh%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1730933851128!5m2!1spt-BR!2sbr" ></iframe>
+                </div>
+            </div>
+    </div>
+    
+
+    <script src="desafio.js"></script>
+</body>
+</html>

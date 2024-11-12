@@ -1,0 +1,444 @@
+* {
+  margin: 0px;
+  padding: 0PX;
+  box-sizing: border-box;
+
+}
+
+body{
+  margin-top: 2.5%;
+  background-color: #494848;
+  background-image: url(./fundo/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+ } 
+.container{
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+}
+
+/*-----------------------------------------------*/
+.login{
+  display: flex;
+  justify-content: space-between;
+}
+.login img{
+  width: 60px;
+  background-color: #df3f64;
+  border-radius: 100px;
+  border: solid 2px #df3f64;
+  box-shadow: 
+    0 0 5px #df3f64,
+    0 0 10px #df3f64,
+    0 0 20px #df3f64,
+    0 0 40px #df3f64;
+}
+.logo{
+  font-size: 37px;
+  font-family: "magic retro";      
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 
+  0 0 10px #df3f64,
+  0 0 20px #df3f64,
+  0 0 40px #df3f64,
+  0 0 80px #df3f64;
+  margin-left: 3.5%;
+}
+
+/*-----------------------------------------------*/ 
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+#navegacao:hover {
+  color: #a64a60;
+}
+.navegar{
+  text-decoration: none;
+  backdrop-filter: blur(3px);
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  border-radius:20px ; 
+  width: 100vh;
+  text-shadow: 0 0 10px #000000;
+}
+#navegacao{
+  text-decoration: none;
+  color:white;
+  font-size: 25px;
+  font-weight: bold; 
+  padding: 5px 66px;
+}
+
+/*-----------------------------------------------*/
+
+.d{
+  color: white;
+  margin: 6% 6% 10% 6%;
+  border-radius: 20px;
+  padding: 5% 0% 6% 0% ;
+  backdrop-filter: blur(3px);
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+}
+.titulod{
+  font-family: "magic retro";
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 37px;
+  line-height: 80%;
+  color:white;
+  text-shadow: 0 0 10px #000000;
+}
+.corpod{
+  font-size: 20px;
+  text-align: center;
+  width: 75%;
+  margin-left: 12%;
+  text-shadow: 0 0 10px #000000;
+}
+li{
+  font-size: 20px;
+  width: 75%;
+  margin-left: 12%;
+  text-shadow: 0 0 10px #000000;
+}
+
+/*-----------------------------------------------*/
+.desa{
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.448);
+  border-radius:20px ;
+  width: 300px;
+  margin: 5% 5% 0% 20%;
+  padding: 3% 3% 8% 2%;
+  backdrop-filter: blur(3px);
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+}
+.desafios{
+  font-family: "magic retro";
+  text-align: center;
+  font-size: 37px;
+  text-shadow: 0 0 10px #000000;
+}
+#frase {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 15px #000000;
+  text-align: center;
+}
+
+
+.botao {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 25%;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.botao-sombra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.botao-borda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.botao-texto {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+
+@media (min-width: 768px) {
+  .botao-texto {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.botao:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.botao:hover .botao-texto {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.botao:active .botao-texto {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.botao:hover .botao-sombra {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.botao:active .botao-sombra {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.botao:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*-----------------------------------------------*/
+
+.tt{
+  font-family: "magic retro";
+  text-align: center;
+  margin-bottom: 1.5%;
+  font-size: 37px;
+  background-color: rgba(255, 255, 255, 0.448);
+  border-radius: 20px;
+  width: 40%;
+  margin: 16% 0% 5% 0%;
+  justify-content: center;
+  color:white;
+  text-shadow: 0 0 10px #000000;
+  backdrop-filter: blur(3px);
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+}
+
+.cardd{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.card{
+	width:300px;
+	border:1px solid #CCC;
+	border-radius:8px;
+	transition:transform 0.3s,box-shadow 0.3s;
+  margin: 10px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  color: white;
+  text-shadow: 0 0 10px #000000;
+}
+.perfil{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  
+}
+.card p{
+  text-align: left;
+  flex: 1;
+  font-weight: bold;
+
+}
+.card img{
+  flex: 1;
+  max-width: 50px;
+  border-radius: 30px;
+}
+.card iframe{
+  width:190px;
+  height:auto;
+  border-radius: 20px;
+  border: solid 5px hotpink;
+  margin: 5px;
+  
+}
+.ttl{
+  text-align: center;
+
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin-top: 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .cardd {
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .card {
+    width: 45%; 
+    padding: 40px;
+  }
+
+  .logo {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  nav {
+    max-width: 95%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 0;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .login {
+    padding: 0 4%;
+  }
+
+  .login img {
+    width: 50px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+  
+  #navegacao {
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+
+  .cardd {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .card img {
+    max-width: 40px;
+  }
+
+  .tt {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .botao-texto {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .tt {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login {
+    flex-direction: row;
+    padding: 0 3%;
+  }
+
+  .login img {
+    width: 40px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navegar {
+    width: 100%;
+  }
+
+  #navegacao {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .botao-texto {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .cardd {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}

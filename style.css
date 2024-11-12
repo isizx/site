@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+  
+  }
+  
+  body{
+    margin-top: 2.5%;
+    background-color: #494848;
+    background-image: url(./fundo/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+   }
+.container{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+/*----------------------------------*/
+.login{
+    display: flex;
+    justify-content: space-between;
+  }
+  .login img{
+    width: 60px;
+    background-color: #df3f64;
+    border-radius: 100px;
+    border: solid 2px #df3f64;
+    box-shadow: 
+      0 0 5px #df3f64,
+      0 0 10px #df3f64,
+      0 0 20px #df3f64,
+      0 0 40px #df3f64;
+  }
+.logo{
+    font-size: 37px;
+    font-family: "magic retro";      
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 
+    0 0 10px #df3f64,
+    0 0 20px #df3f64,
+    0 0 40px #df3f64,
+    0 0 80px #df3f64;
+    margin-left: 3.5%;
+}
+  
+/*-----------------------------------------------*/ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#navegacao:hover {
+    color: #a64a60;
+}
+.navegar{
+    text-decoration: none;
+    backdrop-filter: blur(3px);
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius:20px ; 
+    width: 100vh;
+    text-shadow: 0 0 9px #000000;
+    box-shadow: black 5px;
+}
+#navegacao{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    font-weight: bold; 
+    padding: 5px 66px;
+}
+/*-----------------------------------------------------------*/
+
+.bv{
+    color: white;
+    margin: 6% 6% 4% 6%;
+    border-radius: 20px;
+    padding: 5% 0% 7% 0% ;
+    backdrop-filter: blur(3px);
+    background: transparent;
+    box-shadow: black 5px;
+    border: 2px solid rgba(255,255,255, .2);  
+}
+
+.tt{
+    font-family: "magic retro";
+    color:white;
+    text-shadow: 0 0 10px #000000;
+    text-align: center;
+    margin-bottom: 1.5%;
+    font-size: 37px;
+}
+
+.corpobv{
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin-left: 12%;
+    text-shadow: 0 0 9px #000000;
+}
+
+/*----------------------------------*/
+
+.mapa{
+    backdrop-filter: blur(3px);
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    margin: 23% 6% 0% 6%;
+    border-radius: 20px;
+    padding: 3% 5% 4% 3%;
+    box-shadow: black 5px;
+}
+
+#map{
+    border-radius:20px ;
+    box-shadow: black 5px;
+}
+
+
+.lista select::-ms-expand {
+    display: none;
+}
+
+#map {
+    width: 90%;
+    height: 300px;
+    margin: 3% 0% 0% 6%;
+}
+
+.lista select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/select-angle-down.png) no-repeat center right #FFF;
+    border: 1px solid #333;
+    font-size: 15px;
+    padding-right: 20px;
+    background: rgba(90, 89, 89, 0.589);
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    padding: 10px 20px 13px 10px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: #000000 4px;
+}
+
+/*-----------------------------*/
+@media (max-width: 1024px) {
+    nav {
+        max-width: 95%;
+    }
+
+    .bv, .mapa, .feedb {
+        margin: 8% 3%;
+        padding: 20px;
+    }
+
+    .tt {
+        font-size: 30px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback {
+        font-size: 25px;
+    }
+
+    #map {
+        width: 100%;
+        height: 250px;
+        margin: 5% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        padding: 0 4%;
+    }
+
+    .login img {
+        width: 50px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navegar {
+        width: 85%;
+    }
+
+    #navegacao {
+        font-size: 20px;
+        padding: 5px 20px;
+    }
+
+    .tt {
+        font-size: 30px;
+    }
+
+    .corpobv {
+        width: 100%;
+        margin: auto;
+    }
+
+    .feedback {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        flex-direction: row;
+        padding: 0 3%;
+    }
+
+    .login img {
+        width: 40px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navegar {
+        width: 100%;
+    }
+
+    #navegacao {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .tt {
+        font-size: 24px;
+    }
+
+    .corpobv {
+        font-size: 16px;
+    }
+
+    .feedback {
+        font-size: 18px;
+    }
+
+    #map {
+        height: 200px;
+    }
+}

@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 6px;
+  box-sizing:border-box;
+}
+  
+body{
+  min-height: 100vh;
+  background-color: gray;
+  background: url('fundo/login.gif') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+   
+.logo{
+  font-size: 37px;
+  font-family: "magic retro";
+  text-decoration: none;
+  color:white;
+  text-shadow: 
+  0 0 10px #df3f64,
+  0 0 20px #df3f64,
+  0 0 40px #df3f64,
+  0 0 80px #df3f64;
+  margin: 50% 0% 5% 3.5%;
+}
+
+.wrapper{
+  width: 420px;
+  color: white;
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: black 5px;
+}
+
+.wrapper h1{
+font-size: 36px;
+text-align: center;
+font-family: "magic retro";
+}
+
+.wrapper .input-box{
+position: relative;
+width: 100%;
+height: 50px;
+margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255,255,255, .2);
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  padding: 20x 45px 20px 20px;
+}
+
+input:is(:focus){
+  border: 2px solid #d82aa1;
+  transition: all 0.1s ease;
+}
+
+.input-box input::placeholder{
+  color: #ffffffb6;
+  font-weight: 600;
+}   
+
+.remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right:3px ;
+}
+
+.remember-forgot a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.botao {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-left: 35%;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+ user-select: none;
+ -webkit-user-select: none;
+  touch-action: manipulation;
+}
+ 
+.botao-sombra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+   cubic-bezier(.3, .7, .4, 1);
+}
+  
+.botao-borda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+    );
+  }
+  
+  .botao-texto {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    font-family: "magic retro";
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+}
+ .register-link{
+ text-align: center;
+ }
+ .register-link a{
+  color: white;
+  text-decoration: none;
+ }
+
+ .register-link a:hover{
+  text-decoration:underline;
+ }
+  
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .wrapper h1 {
+    font-size: 24px;
+  }
+
+  .botao {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .wrapper h1 {
+    font-size: 20px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+  }
+
+  .remember-forgot {
+    font-size: 12px;
+  }
+
+  .botao {
+    font-size: 0.9rem;
+  }
+}

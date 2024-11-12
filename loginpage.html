@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='loginpage.css'>
+    <link rel="icon" href="favicon/mapaRosa-removebg-preview.png" type="image/png">
+    <title>Login</title>
+</head>
+<body>
+            
+        <div class="home">
+        <h1><a class ="logo" href="index.html">EpicAventura</a></h1>
+        </div>
+        <div class="container">
+        <div class="wrapper">
+            <form>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input id="user" type="text" placeholder="  Usuario" maxlength="10" required>
+                </div>
+                <div class="input-box">
+                    <input id="senha" type="password" placeholder="  Senha", maxlength="8"  required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">lembre de mim</label><a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button class="botao" type="submit" onclick="logar(); return false">
+                    <span class="botao-sombra"></span>
+                    <span class="botao-borda"></span>
+                    <span class="botao-texto text">
+                    Entrar
+                    </span>
+                </button>
+                
+                <div class="register-link">
+                    <p>Não tem conta?<a href="#"> Registre-se</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

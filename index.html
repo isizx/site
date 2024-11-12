@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" href="favicon/mapaRosa-removebg-preview.png" type="image/png">
+    <title>EpicAventura</title>
+    <meta name="descripition" content="Explore o mundo!">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1><a class ="logo" href="#">EpicAventura</a></h1>
+            <a class="login" href="loginpage.html"><img class="logo" src="favicon/icologin.png"></a>
+        </div>
+    
+        <nav>
+            <div class="navegar">
+                <a href="#" id="navegacao">Inicio</a>
+                <a href='sobre.html' id="navegacao">Sobre<a>
+                <a href='desafio.html' id="navegacao">Desafio</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="bv">  
+        <h2 class="tt">Boas-vindas!</h2>
+            <p class="corpobv"> Estamos empolgados por ter você aqui e convidamos você a explorar cada cantinho. 
+            Mergulhe em uma jornada cheia de descobertas, conteúdos interessantes e experiências
+            feitas para encantar e inspirar. Sinta-se à vontade para navegar, 
+            se aventurar e aproveitar tudo o que preparamos especialmente para você. 
+            Seja bem-vindo e divirta-se!</p>
+    </div>
+
+    <div class="mapa">
+        <h3 class="tt">Saiba os locais próximo de você</h3>
+        <div class="lista">
+            <select id="placeType" onchange="showMap()">
+                <option class="opcao" value="">Selecione...</option>
+                <option class="opcao" value="restaurant">Restaurante</option>
+                <option class="opcao" value="movie_theater">Cinema</option>
+                <option class="opcao" value="shopping_mall">Shopping</option>
+            </select>
+        </div>
+        <div id="map"></div>  		
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUqR_dWMxF7ZKI9NIOChEEadsZ7ys0MKg&libraries=places"></script>
+</body>
+</html>
