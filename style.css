@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'magic retro';
+  src: url('../Magic Retro.ttf') format('truetype');
+}
+
 * {
     margin: 0px;
     padding: 0PX;
