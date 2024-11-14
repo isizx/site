@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'magic retro';
-  src: url('Magic Retro.ttf') format('truetype');
+  font-family: 'magic-retro';
+  src: url('magic-retro.ttf') format('truetype');
 }
 
 * {
@@ -43,7 +43,7 @@
   }
 .logo{
     font-size: 37px;
-    font-family: "magic retro";      
+    font-family: "magic-retro";      
     color:white;
     text-decoration: none;
     text-align: center;
@@ -97,7 +97,7 @@ nav {
 }
 
 .tt{
-    font-family: "magic retro";
+    font-family: "magic-retro";
     color:white;
     text-shadow: 0 0 10px #000000;
     text-align: center;
