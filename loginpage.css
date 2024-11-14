@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'magic-retro';
+  src: url('magic-retro.ttf') format('truetype');
+}
+
 * {
   margin: 0px;
   padding: 6px;
@@ -21,7 +26,7 @@ body{
    
 .logo{
   font-size: 37px;
-  font-family: "magic retro";
+  font-family: "magic-retro";
   text-decoration: none;
   color:white;
   text-shadow: 
@@ -47,7 +52,7 @@ body{
 .wrapper h1{
 font-size: 36px;
 text-align: center;
-font-family: "magic retro";
+font-family: "magic-retro";
 }
 
 .wrapper .input-box{
@@ -153,7 +158,7 @@ input:is(:focus){
     border-radius: 12px;
     font-size: 1.1rem;
     color: white;
-    font-family: "magic retro";
+    font-family: "magic-retro";
     background: hsl(345deg 100% 47%);
     will-change: transform;
     transform: translateY(-4px);
