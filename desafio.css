@@ -57,31 +57,32 @@ body{
 
 /*-----------------------------------------------*/ 
 nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: black 5px;
 }
-#navegacao:hover {
-  color: #a64a60;
-}
-.navegar{
-  text-decoration: none;
-  backdrop-filter: blur(3px);
-  background: transparent;
-  border: 2px solid rgba(255,255,255, .2);
-  border-radius:20px ; 
-  width: 100vh;
-  text-shadow: 0 0 10px #000000;
-}
-#navegacao{
-  text-decoration: none;
-  color:white;
-  font-size: 25px;
-  font-weight: bold; 
-  padding: 5px 66px;
-}
+  #navegacao:hover {
+    color: #a64a60;
+  }
+  .navegar{
+    text-decoration: none;
+    backdrop-filter: blur(3px);
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius:20px ; 
+    width: 100vh;
+    text-shadow: 0 0 9px #000000;
+  }
+  #navegacao{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    font-weight: bold; 
+    padding: 5px 66px;
+  }
 
 /*-----------------------------------------------*/
 
